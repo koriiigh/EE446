@@ -22,9 +22,9 @@ void onPDMdata() {
 }
 
 const int SOUND_THRESHOLD = 200;
-const int DARK_THRESHOLD = 50;
+const int DARK_THRESHOLD = 100;
 const float MOTION_THRESHOLD = 0.15;
-const int NEAR_THRESHOLD = 20;
+const int NEAR_THRESHOLD = 100;
 
 void setup() {
   Serial.begin(115200);
@@ -78,7 +78,7 @@ void loop() {
   bool isSound = (mic > SOUND_THRESHOLD);
   bool isDark = (clearVal < DARK_THRESHOLD);
   bool isMoving = (motion > MOTION_THRESHOLD);
-  bool isNear = (proximity > NEAR_THRESHOLD);
+  bool isNear = (proximity < NEAR_THRESHOLD);
 
   String label;
   if (isMoving && isNear) {
