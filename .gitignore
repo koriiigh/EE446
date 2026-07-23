@@ -1,0 +1,18 @@
+LAB5/dataset/
+LAB5/tensorflow/
+LAB5/tensorflow-2.14.1/
+LAB5/train/
+LAB5/logs/
+LAB5/models/
+LAB5/trimmed/
+LAB5/extract_loudest_section/
+LAB5/.ipynb_checkpoints/
+LAB5/*.tar.gz
+LAB5/*.tgz
+LAB5/*.zip
+LAB5/*.pkl
+.DS_Store
+**/.DS_Store
+Lab4/Face Mask Dataset/
+.DS_Store
+**/.DS_Store
